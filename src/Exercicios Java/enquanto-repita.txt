@@ -1,0 +1,17 @@
+	package project;
+	
+	import javax.swing.JOptionPane;
+	
+	public class projeto {
+		public static void main (String [] args) {
+			//wille - enquanto repita 
+			
+			int x = 0;
+			while (x <10) {
+				// enquanto x for menor que 10
+				System.out.println(x);
+				x++;
+			}
+			
+		}
+	}

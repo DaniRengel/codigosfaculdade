@@ -1,0 +1,18 @@
+package trabalho;
+
+import javax.swing.JOptionPane;
+
+public class Desconto {
+
+	public static void main(String[] args) {
+		String nome, senha;
+		nome = JOptionPane.showInputDialog("login:");
+		senha = JOptionPane.showInputDialog("senha:");
+		while (!"joaolucas".equals(nome) || !"123456".equals(senha)) {
+			System.out.println("tente novamente");
+			break;
+		}
+
+	}
+
+}

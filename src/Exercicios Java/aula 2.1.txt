@@ -1,0 +1,72 @@
+package aula;
+
+import java.util.Scanner;
+
+public class principal {
+	
+
+	public static void main(String[] args)
+	{
+				
+	    int a = 3;
+	    int b = 7;
+	    
+	  
+	    System.out.println("Adição"+(a+b));
+		
+	    System.out.println("Subtração"+(b-a));
+	    
+	    System.out.println("Multiplicacao"+(b*a));
+	    
+	    System.out.println("Divisão"+(b/a));
+	    
+	    
+	     // 5 mod 5 
+	    
+	    int c = 5;
+	    int d = 10;
+		
+	    System.out.println(c % d);
+	    
+	    // 7 div 2
+	    
+	    int e = 7;
+	    int f = 2;
+	    
+	    System.out.println(e / f);
+	    
+	    
+	    
+	    //negacao (nao)
+	    
+	    boolean verdadeiro = true;
+	    boolean falso = false;
+	    
+	    System.out.println(!verdadeiro);
+	    System.out.println(!falso);
+	    
+	    System.out.println("Pot = " + Math.pow (3,3));
+	    System.out.println("rad = " + Math.sqrt (9));
+	    
+	    
+	    
+	    // operadores unitarios
+	    
+	    int g = 1;
+	    
+	    System.out.println(g);
+	    System.out.println(g++);  //pos incremento
+	    System.out.println(g);
+	    
+	    
+	    int h = 2;
+	    
+	    System.out.println(h);
+	    System.out.println(++h);  // pré-incremento
+	    System.out.println(h);
+	    
+	    
+	    
+	    
+	} 
+}	

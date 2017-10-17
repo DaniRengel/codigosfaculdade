@@ -1,0 +1,50 @@
+package joaolucas;
+
+import java.util.Scanner;
+
+public class principal {
+
+	public static void main(String[] args)
+	{
+				
+		// inteiro
+		int numeroInteiro = 10;
+		
+		// logico v ou f 
+		boolean verdadeiro = true;
+		boolean falso = false;
+		
+		//caractere
+		String meuTexto = "Meu texto";
+		
+		//numerico
+		
+		double meuNumerico = 100.5;
+		
+		//variaveis e constantes
+		
+		String minhaVariavel = "variavel";
+		minhaVariavel = "variavel 2";
+		
+		final String minhaConstante = "Constante";
+		
+		final String minhaConstante2 = "Constante22222222";
+			
+		//leia 
+		
+		
+		Scanner meuLeia = new Scanner(System.in);
+		
+		//escreva 
+		
+		System.out.println("Digite seu nome: ");
+		
+		//leia
+		
+		String nome = meuLeia.nextLine();
+		
+		//escreva
+		
+		System.out.println(nome);
+				
+	}

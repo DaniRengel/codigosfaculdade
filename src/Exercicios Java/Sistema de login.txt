@@ -1,0 +1,21 @@
+package logon;
+
+import javax.swing.JOptionPane;
+
+public class Usuario {
+
+	public static void main(String[] args) {
+		String login = JOptionPane.showInputDialog("login: ");
+		String senha = JOptionPane.showInputDialog("senha: ");
+
+		JOptionPane.showMessageDialog(null, "login: " + login);
+		JOptionPane.showMessageDialog(null, "senha: " + senha);
+
+		if (senha.equals("123456") && login.equals("joaolucas")) {
+			System.out.println("Logado com sucesso");
+		} else if (!senha.equals("123456") && !login.equals("joaolucas")) {
+			System.out.println("Senha incorreta");
+		}
+
+	}
+}

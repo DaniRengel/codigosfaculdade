@@ -1,0 +1,26 @@
+package aula;
+
+import java.util.Scanner;
+
+public class principal {
+	
+
+	public static void main(String[] args)
+	{
+				
+		int anoNascimento,anoAtual;
+		
+		Scanner meuLeia = new Scanner(System.in);
+		System.out.println("Escreva ano nascimento = " );
+		anoNascimento = meuLeia.nextInt();
+		
+		System.out.println("Escreve o ano atual");
+		anoAtual = meuLeia.nextInt();
+		
+		System.out.println("Sua idade é = " + (anoAtual-anoNascimento));
+	    
+	    
+	    
+	    
+	} 
+}	

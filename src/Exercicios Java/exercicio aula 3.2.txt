@@ -1,0 +1,28 @@
+package joaolucas;
+
+import java.util.Scanner;
+
+public class principal {
+
+	public static void main(String[] args)
+	{
+		Scanner mediaaluno = new Scanner (System.in);
+		double nota;
+		System.out.println("Digite sua nota = ");
+		nota = mediaaluno.nextDouble();
+		
+		if(nota < 70){
+			System.out.println("Aluno reprovado");
+		} else if(nota == 70) {
+			System.out.println("O Aluno esta na media");
+		} else {
+			System.out.println("O aluno foi reprovado");
+		}
+		
+		
+		
+		
+		
+	}
+
+}

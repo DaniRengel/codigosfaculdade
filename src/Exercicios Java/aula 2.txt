@@ -1,0 +1,33 @@
+package aula;
+
+import java.util.Scanner;
+
+public class principal {
+
+	public static void main(String[] args)
+	{
+				
+		//inicio
+		
+		
+		//leia
+		Scanner meuLeia = new Scanner (System.in);
+		
+		
+		//ler caractere
+		String nome = meuLeia.nextLine();
+		
+		//ler inteiro
+		
+		int idade = meuLeia.nextInt();
+		
+		//ler numero
+		
+		double salario = meuLeia.nextDouble();
+		
+		//ler logico
+		boolean isPizza = meuLeia.nextBoolean();
+		
+		
+				
+	} 

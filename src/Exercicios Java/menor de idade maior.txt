@@ -1,0 +1,26 @@
+package trabalho;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+public class Desconto {
+	
+
+	public static void main (String[] args) {
+		int anoNascimento,anoAtual,idade;
+		Scanner leia = new Scanner(System.in);
+		System.out.print("Qual o seu ano de nascimento ? ");
+		anoNascimento = leia.nextInt();
+		
+		System.out.print("Qual o ano atual ? ");
+		anoAtual = leia.nextInt();
+		
+		idade = anoAtual  -anoNascimento;
+		if (idade < 18) {
+			System.out.println("voce é menor de idade");
+		} else if (idade >= 18) {
+			System.out.println("voce é maior de idade");
+		}
+	}
+	
+}

@@ -1,0 +1,20 @@
+// Compara se é igual 
+		if(resultado==8) {
+			System.out.println("Resultado é 8");
+		}
+				
+// Compara se é diferente
+
+if (resultado !=0) {
+	System.out.println("É diferente de zero!");
+}
+
+String nome = "Joao";
+if (nome.equals("joao")) {
+System.out.println("Nome correto");
+}
+
+String nome2 = "joao2";
+if (!nome2.equals("joao")) {
+	System.out.println("nome e diferente de joao");
+}

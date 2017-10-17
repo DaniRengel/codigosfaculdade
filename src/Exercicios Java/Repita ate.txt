@@ -1,0 +1,16 @@
+	package project;
+	
+	import javax.swing.JOptionPane;
+	
+	public class projeto {
+		public static void main (String [] args) {
+			//do while - repita ate
+			int y = 0;
+			do {
+				System.out.println(y);
+				y++;
+				
+			} while (y<10);
+			
+		}
+	}

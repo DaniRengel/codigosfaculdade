@@ -1,0 +1,35 @@
+1) Escreva um programa para ler o nome e a idade de uma pessoa e imprimir o nome e o valor que ela terá que pagar por um plano de saude. 
+
+package exercicios;
+
+import java.util.Scanner;
+
+public class trabalho {
+	public static void main (String[] args) {
+		Scanner nomepessoa = new Scanner(System.in);
+		String pessoanome;
+		System.out.println("Escreva o seu nome : ");
+		pessoanome = nomepessoa.nextLine();
+		System.out.println("\n");
+			
+		Scanner idadepessoa = new Scanner(System.in);
+		double pessoaidade;
+		System.out.println("Qual a sua idade? ");
+		pessoaidade = idadepessoa.nextDouble();
+		System.out.println("\n");
+		
+		if (pessoaidade <= 10) {
+		System.out.println("o plano será de R$30,00 ");
+		} else if (pessoaidade > 10 && pessoaidade <= 29) {
+		System.out.println("o plano será de R$60,00");
+		} else if (pessoaidade > 30 && pessoaidade <= 45) {
+		System.out.println("o plano será de R$120,00");
+		} else if (pessoaidade > 45 && pessoaidade <= 59) {
+			System.out.println("o plano será de R$150,00");
+		} else if (pessoaidade > 59 && pessoaidade <= 65) {
+			System.out.println("o plano será de R$250,00");
+		} else if (pessoaidade > 65) {
+			System.out.println("o plano será de R$400,00");
+		}
+		
+	}
