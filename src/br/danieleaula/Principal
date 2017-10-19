@@ -1,0 +1,67 @@
+/*
+Faça um programa em Java que calcule e exiba o valor do desconto e o valor a ser pago pelo
+cliente de varios carros.
+O desconto deverá ser calculado de acordo com o ano do veículo.
+Até 2000 desconto de 12% e acima de 2000 desconto de 7%. O sistema deverá perguntar se
+deseja continuar calculando novos descontos até que a resposta seja: “(N) não”.
+Informar o toral de carros com ano até 2000 e o total de carros no geral.
+Usar JoptionPane para entrada e saída de dados.
+Dica: WHILE
+ */
+package br.danieleaula;
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Luís Guilherme
+ */
+public class Principal {
+
+    public static void main(String[] args) {
+        //declara as variaveis do tipo string para receber os inputs
+        String sAno, sValor;
+        //cria algumas variaveis int q serao usadas
+        int ano, valor, resposta, contador = 0, desconto;
+        //cria vetor, pus 10 posições mas pode alterar
+        int[] carros = new int[10];
+        //cria laço do tipo do while q faz algo enquanto respeitar a condição
+        do {
+            //JOptionPane recebe um dado do tipo String
+            sAno = JOptionPane.showInputDialog("Informe o ano do carro:");
+            sValor = JOptionPane.showInputDialog("Informe o valor do carro:");
+            //para poder fazer calculo é preciso tranformar em int
+            ano = Integer.parseInt(sAno);
+            valor = Integer.parseInt(sValor);
+            //joga no array o ano. criei um contador que incrementa no fim do laço e joga cada ano numa posição
+            carros[contador] = ano;
+            if (ano < 2000) {
+                //dar desconto 12%
+                desconto = valor * 12 / 100;
+            } else {
+                //dar desconto 7%
+                desconto = valor * 7 / 100;
+            }
+            contador++;
+            JOptionPane.showMessageDialog(null, "O desconto foi de " + String.valueOf(desconto));
+            resposta = JOptionPane.showConfirmDialog(null, "Deseja informar um carro para cálculo?");
+        } while (resposta != JOptionPane.NO_OPTION);
+        //cria uma outra variavel pra depois contar os carros
+        int antes2000 = 0;
+        int depois2000 = 0;
+        //faz um laço for pra fazer a contagem dos anos
+        for (int i = 0; i < carros.length; i++) {
+            if (carros[i] != 0) {
+                if (carros[i] < 2000) {
+                    antes2000++;
+                } else {
+                    depois2000++;
+                }
+            }
+        }
+        //exibe a contage, tranformando os ints em string.
+        JOptionPane.showMessageDialog(null, "O número de carros antes de 2000 foi de " + String.valueOf(antes2000));
+        JOptionPane.showMessageDialog(null, "O número de carros depois de 2000 foi de " + String.valueOf(depois2000));
+    }
+
+}
