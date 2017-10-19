@@ -1,0 +1,28 @@
+public class Laco {
+
+
+  public static void main(String[] args){
+
+    //declara matriz
+    String [][]matriz = new String[2][2];
+
+
+    // faz 2 laços pra "popular" a matriz
+    for(int i=0; i < matriz.length; i++){
+      for(int c = 0; c < matriz[i].length; c++){
+        matriz[i][c] = "Luís Guilherme " + String.valueOf(i+c);
+      }
+    }
+
+
+    // faz 2 laços pra imprimir a matriz
+    for(int i=0; i < matriz.length; i++){
+      for(int c = 0; c < matriz[i].length; c++){
+        System.out.println(matriz[i][c]);
+      }
+    }
+
+  }
+
+
+}
